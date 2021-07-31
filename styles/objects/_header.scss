@@ -1,11 +1,57 @@
 .header {
-  display: flex; 
-  background: var(--c-seven); 
+  display: flex;
+  justify-content: space-between;
+  background: var(--c-seven);
 
   &__img {
     padding: 1%;
     @include square(80px, $radius: 50%);
   }
+
+  &__nav {
+    justify-content: space-around;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+
+    @media (min-width: $large) {
+      width: 40%;
+      padding-right: 20px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 0 10px;
+
+    @media (min-width: $large) {
+      padding: 0 20px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--c-white);
+    transition: all 0.3s ease;
+
+    &:hover {
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: $large) {
+      font-size: 1.5rem;
+
+      &:hover {
+        font-size: 2.5rem;
+      }
+    }
+  }
 }
-
-

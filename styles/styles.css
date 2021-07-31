@@ -374,6 +374,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: var(--c-eight);
+  text-align: center;
 }
 
 .main__img {
@@ -392,6 +393,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: var(--c-seven);
 }
 
@@ -400,6 +404,68 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+
+.header__nav {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 70%;
+}
+
+@media (min-width: 992px) {
+  .header__nav {
+    width: 40%;
+    padding-right: 20px;
+  }
+}
+
+.header__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.header__item {
+  padding: 0 10px;
+}
+
+@media (min-width: 992px) {
+  .header__item {
+    padding: 0 20px;
+  }
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--c-white);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header__link:hover {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .header__link {
+    font-size: 1.5rem;
+  }
+  .header__link:hover {
+    font-size: 2.5rem;
+  }
 }
 
 .cards {
@@ -441,6 +507,28 @@ body {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+}
+
+.footer {
+  background: var(--c-seven);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+.footer__title {
+  margin: 0;
+  color: var(--c-white);
+  text-shadow: 1px 2px 3px var(--c-black);
+  font-size: 2rem;
 }
 
 .card {

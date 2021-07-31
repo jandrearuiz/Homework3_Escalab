@@ -1,0 +1,15 @@
+.footer {
+  background:var(--c-seven);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+  &__title {
+    margin: 0;
+    color: var(--c-white);
+    text-shadow: 1px 2px 3px var(--c-black);
+    font-size: 2rem;
+  }
+}
