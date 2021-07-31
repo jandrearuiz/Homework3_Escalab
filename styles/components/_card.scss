@@ -1,3 +1,30 @@
-.img {
-  @include square(100px, $radius: 50%);
+$names: one, two, three;
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2%;
+  width: 90%;
+  padding: 3%;
+  border-radius: 20px;
+  color: var(--c-white);
+
+  &__img {
+    @include square(100px, $radius: 50%);
+    box-shadow: 1px 2px 3px var(--c-black);
+  }
+
+  @each $name in $names {
+    &.#{$name} {
+      @include card($name);
+    }
+  }
+
+  &__title {
+    font-weight: 200;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px var(--c-black);
+  }
 }

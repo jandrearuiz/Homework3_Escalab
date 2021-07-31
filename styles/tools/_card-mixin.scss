@@ -1,0 +1,17 @@
+@mixin card($name) {
+  @if $name == one {
+    background: var(--c-four);
+
+    @include button(--c-four);
+  }
+  @else if $name == two {
+    background: var(--c-five);
+
+    @include button(--c-five);
+  }
+  @else if $name == three {
+    background: var(--c-six);
+
+    @include button(--c-six);
+  }
+}
