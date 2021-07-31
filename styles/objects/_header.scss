@@ -1,0 +1,9 @@
+.header {
+  display: flex;  
+
+  &__img {
+    @include square(150px, $radius: 50%);
+  }
+}
+
+

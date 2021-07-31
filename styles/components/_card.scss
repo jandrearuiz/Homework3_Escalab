@@ -1,0 +1,3 @@
+.img {
+  @include square(100px, $radius: 50%);
+}

@@ -1,0 +1,9 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:last-child {
+    flex-direction: row-reverse;
+  }
+}
